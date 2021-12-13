@@ -17,11 +17,12 @@ private:
     int value;
 
 public:
-    MyInteger();
+    MyInteger(int);
+    MyInteger(const MyInteger&);
 
 // 디버깅용
 public:
     int getValue();
-    void setValue(int input);
+    void setValue(int);
 
 };
