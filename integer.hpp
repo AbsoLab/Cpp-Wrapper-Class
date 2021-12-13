@@ -14,9 +14,14 @@
 class MyInteger {
 
 private:
-    int integer;
+    int value;
 
 public:
     MyInteger();
+
+// 디버깅용
+public:
+    int getValue();
+    void setValue(int input);
 
 };
