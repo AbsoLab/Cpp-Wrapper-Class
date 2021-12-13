@@ -1,1 +1,1 @@
-# StudyAlgorithm
+# C++ Wrapper Class
