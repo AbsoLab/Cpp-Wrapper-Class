@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+using namespace std;
 // int의 wrapper class
 /*
     구현 할 기능
@@ -13,12 +15,19 @@
 
 class MyInteger {
 
+// 변수
 private:
     int value;
 
+// 생성자
 public:
     MyInteger(int);
     MyInteger(const MyInteger&);
+
+// 메소드
+public:
+    string to_string();
+    string to_string(int);  // 2 ~ 16 진수만 지원
 
 // 디버깅용
 public:
