@@ -25,9 +25,9 @@ string MyInteger::to_string(const int notation) {
         i_temp = value % notation;
 
         
-        if (0 <= i_temp < 10) {
+        if (0 <= i_temp && i_temp < 10) {
 
-            result += i_temp + '0';
+            result += '0' + i_temp;
 
         // 11진수 이상 문자 처리
         } else {
